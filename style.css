@@ -147,23 +147,25 @@ button:hover{
 
 .whatsapp-float:hover{
     transform:scale(1.15);
-}/* Google Map Section */
+/* Google Map */
 
 .map-section{
     width:90%;
-    max-width:1100px;
+    max-width:1200px;
     margin:60px auto;
     text-align:center;
 }
 
 .map-section h2{
-    color:#ffffff;
+    color:#222;
+    font-size:34px;
     margin-bottom:20px;
-    font-size:32px;
 }
 
 .map-section iframe{
     width:100%;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    height:400px;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
 }
