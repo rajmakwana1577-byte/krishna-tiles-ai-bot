@@ -2,141 +2,463 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Krishna Ceramics Store - Premium Tiles Manufacturer & Supplier">
+
+<meta name="keywords" content="Tiles, Vitrified Tiles, Wall Tiles, Floor Tiles, Parking Tiles">
+
+<meta name="author" content="Krishna Ceramics Store">
 
 <title>Krishna Ceramics Store</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<nav>
+<!-- ========================= -->
+<!-- Navigation -->
+<!-- ========================= -->
+
+<nav class="navbar">
 
 <div class="logo">
+
 🏢 Krishna Ceramics Store
+
 </div>
 
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<ul class="menu">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu-toggle">
+
+☰
+
 </div>
 
 </nav>
 
-<header class="hero">
+<!-- ========================= -->
+<!-- Hero Section -->
+<!-- ========================= -->
+
+<header class="hero" id="home">
+
 <div class="hero-slider">
-    <img src="images/Ahmedabad_Showroom_6.webp" class="slide active">
-    <img src="images/Ahmedabad_Showroom_5.webp" class="slide">
-    <img src="images/Ahmedabad_Showroom_8.webp" class="slide">
-    <img src="images/Ahmedabad_Showroom_20.webp" class="slide">
-    <img src="images/Ahmedabad_Showroom_27.webp" class="slide">
-</div> 
+
+<img src="images/Ahmedabad_Showroom_6.webp" class="slide active">
+
+<img src="images/Ahmedabad_Showroom_5.webp" class="slide">
+
+<img src="images/Ahmedabad_Showroom_8.webp" class="slide">
+
+<img src="images/Ahmedabad_Showroom_20.webp" class="slide">
+
+<img src="images/Ahmedabad_Showroom_27.webp" class="slide">
+
+</div>
+
 <div class="overlay"></div>
 
 <div class="hero-content">
-<h1>🏢 Krishna Ceramics Store</h1>
 
-<p>Premium Tiles Manufacturer & Supplier</p>
+<h1>
 
-<div class="buttons">
+Premium Tiles Collection
 
-<button>Explore Collection</button>
+</h1>
 
-<button>Contact Us</button>
+<p>
+
+Luxury Designs for Modern Homes & Commercial Projects
+
+</p>
+
+<div class="hero-buttons">
+
+<button>
+
+Explore Collection
+
+</button>
+
+<button>
+
+Contact Us
+
+</button>
 
 </div>
+
 </div>
+
 </header>
 
-<main> 
-<section class="categories">
+<!-- ========================= -->
+<!-- Products -->
+<!-- Part 2 -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- Premium Products -->
+<!-- ========================= -->
 
-<h2>Our Premium Tiles Collection</h2>
+<section class="products" id="products">
 
-<div class="cards">
+<div class="section-title">
 
-<div class="card">
+<h2>Our Premium Collection</h2>
+
+<p>Explore Our Best Selling Tile Collections</p>
+
+</div>
+
+<div class="product-grid">
+
+<!-- Card 1 -->
+
+<div class="product-card">
+
+<span class="badge">BEST SELLER</span>
+
 <img src="images/Ahmedabad_Showroom_6.webp" alt="Floor Tiles">
-<h3>🏠 Floor Tiles</h3>
-<p>Premium Vitrified Floor Tiles for Home & Office.</p>
-<button onclick="openPopup('Floor Tiles','Premium Vitrified Floor Tiles for Home & Office.')">View Collection</button>
+
+<h3>Floor Tiles</h3>
+
+<p>600×600 Premium Vitrified Floor Tiles</p>
+
+<div class="price">
+
+₹450 / Box
+
 </div>
 
-<div class="card">
- <img src="images/Ahmedabad_Showroom_5.webp" alt="Wall Tiles">
-<h3>🛁 Wall Tiles</h3>
-<p>Elegant Digital Wall Tiles with Modern Designs.</p>
-<button>View Collection</button>
+<button onclick="openPopup('Floor Tiles','Premium 600×600 Vitrified Floor Tiles')">
+
+View Details
+
+</button>
+
 </div>
 
-<div class="card">
+<!-- Card 2 -->
+
+<div class="product-card">
+
+<span class="badge">NEW</span>
+
+<img src="images/Ahmedabad_Showroom_5.webp" alt="Wall Tiles">
+
+<h3>Wall Tiles</h3>
+
+<p>Digital Designer Wall Tiles</p>
+
+<div class="price">
+
+₹390 / Box
+
+</div>
+
+<button onclick="openPopup('Wall Tiles','Luxury Digital Wall Tiles Collection')">
+
+View Details
+
+</button>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="product-card">
+
+<span class="badge">HOT</span>
+
 <img src="images/Ahmedabad_Showroom_8.webp" alt="Parking Tiles">
-<h3>🚗 Parking Tiles</h3>
-<p>Heavy Duty Outdoor Parking Tiles.</p>
-<button onclick="openPopup('Wall Tiles','Elegant Digital Wall Tiles with Modern Designs.')">View Collection</button>
+
+<h3>Parking Tiles</h3>
+
+<p>Heavy Duty Outdoor Parking Tiles</p>
+
+<div class="price">
+
+₹520 / Box
+
 </div>
 
-<div class="card">
- <img src="images/Ahmedabad_Showroom_4.webp" alt="Wooden Finish Tiles">
-<h3>🌳 Wooden Finish Tiles</h3>
-<p>Natural Wooden Texture Collection.</p>
-<button onclick="openPopup('Wooden Finish Tiles','Natural Wooden Texture Collection.')">View Collection</button>
+<button onclick="openPopup('Parking Tiles','Outdoor Heavy Duty Parking Tiles')">
+
+View Details
+
+</button>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="product-card">
+
+<span class="badge">PREMIUM</span>
+
+<img src="images/Ahmedabad_Showroom_20.webp" alt="Wooden Finish Tiles">
+
+<h3>Wooden Finish Tiles</h3>
+
+<p>Luxury Wooden Finish Collection</p>
+
+<div class="price">
+
+₹680 / Box
+
+</div>
+
+<button onclick="openPopup('Wooden Finish Tiles','Luxury Wooden Finish Collection')">
+
+View Details
+
+</button>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- ========================= -->
+<!-- About Section -->
+<!-- Part 3 -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- About Section -->
+<!-- ========================= -->
 
-</main> /
-<section class="map-section">
-    <h2>📍 Visit Our Store</h2>
+<section class="about" id="about">
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.2117644183126!2d70.95079764756645!3d22.61826581228969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395997002c083d51%3A0x7d720f1c3a590d88!2sKhodiyar%20Mandap%20Sarvis!5e0!3m2!1sen!2sin!4v1783449793836!5m2!1sen!2sin"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
-</section>
-<footer>
+<div class="section-title">
 
-<p>© 2026 Krishna Ceramics Store | All Rights Reserved</p>
+<h2>About Krishna Ceramics Store</h2>
 
-</footer>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/919510108013?text=Hello%20Krishna%20Ceramics%20Store%20I%20want%20information%20about%20tiles"
-   class="whatsapp-float"
-   target="_blank">
-    💬<!-- Product Popup -->
-
-<div id="popup" class="popup">
-
-    <div class="popup-content">
-
-        <span class="close" onclick="closePopup()">&times;</span>
-
-        <h2 id="popupTitle"></h2>
-
-        <p id="popupText"></p>
-
-        <a id="popupBtn" target="_blank">
-            <button>WhatsApp Inquiry</button>
-        </a>
-
-    </div>
+<p>Your Trusted Partner in Premium Tiles</p>
 
 </div>
 
-<script src="script.js"></script>
-</a>
-</body>
+<div class="about-container">
 
-</html>
+<div class="about-image">
+
+<img src="images/Ahmedabad_Showroom_27.webp" alt="Krishna Ceramics">
+
+</div>
+
+<div class="about-content">
+
+<h3>Building Beautiful Spaces Since 2017</h3>
+
+<p>
+
+Krishna Ceramics Store is committed to delivering premium quality vitrified tiles, wall tiles, parking tiles and designer collections with modern styles and trusted service.
+
+</p>
+
+<div class="stats">
+
+<div class="stat-box">
+
+<h2>5000+</h2>
+
+<span>Happy Customers</span>
+
+</div>
+
+<div class="stat-box">
+
+<h2>1000+</h2>
+
+<span>Products</span>
+
+</div>
+
+<div class="stat-box">
+
+<h2>8+</h2>
+
+<span>Years Experience</span>
+
+</div>
+
+<div class="stat-box">
+
+<h2>24×7</h2>
+
+<span>Support</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Why Choose Us -->
+<!-- ========================= -->
+
+<section class="features" id="features">
+
+<div class="section-title">
+
+<h2>Why Choose Us</h2>
+
+<p>Quality • Trust • Innovation</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<h3>🏆 Premium Quality</h3>
+
+<p>High quality vitrified and designer tiles with long life.</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>🚚 Fast Delivery</h3>
+
+<p>Quick dispatch and reliable delivery across India.</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>💰 Best Price</h3>
+
+<p>Factory-direct pricing with excellent value.</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>🤝 Trusted Support</h3>
+
+<p>Friendly customer service and dealer assistance.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Gallery -->
+<!-- Part 4 -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- Premium Gallery -->
+<!-- ========================= -->
+
+<section class="gallery" id="gallery">
+
+<div class="section-title">
+
+<h2>Our Gallery</h2>
+
+<p>Explore Our Latest Premium Tile Collections</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<img src="images/Ahmedabad_Showroom_6.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_5.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_8.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_20.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_27.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_4.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_3.webp" alt="Gallery Image">
+
+<img src="images/Ahmedabad_Showroom_2.webp" alt="Gallery Image">
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Contact Section -->
+<!-- ========================= -->
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+
+<h2>Contact Us</h2>
+
+<p>We are always ready to help you.</p>
+
+</div>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>🏢 Krishna Ceramics Store</h3>
+
+<p>📍 Wankaner, Gujarat</p>
+
+<p>📞 +91 95101 08013</p>
+
+<p>📧 info@krishnaceramics.com</p>
+
+<p>🕒 Monday - Saturday | 9:00 AM - 7:00 PM</p>
+
+</div>
+
+<div class="map-section">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.2117644183126!2d70.95079764756645!3d22.61826581228969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395997002c083d51%3A0x7d720f1c3a590d88!2sKhodiyar%20Mandap%20Sarvis!5e0!3m2!1sen!2sin!4v1783449793836!5m2!1sen!2sin"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- Part 5 -->
+<!-- ========================= -->
