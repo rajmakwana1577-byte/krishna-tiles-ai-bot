@@ -1,1 +1,40 @@
+body{
+    background:#f4f4f4;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    margin:0;
+    padding:40px;
+}
 
+header{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#0b5ed7,#003b8e);
+    color:white;
+    border-radius:20px;
+}
+
+h1{
+    color:white;
+    margin:0;
+}
+
+p{
+    color:white;
+    font-size:20px;
+}
+
+button{
+    background:white;
+    color:#0b5ed7;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:18px;
+    margin:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
