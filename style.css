@@ -48,7 +48,7 @@ nav{
 
 /* Hero */
 
-header{
+header:not(.hero){
     
     color:white;
     text-align:center;
