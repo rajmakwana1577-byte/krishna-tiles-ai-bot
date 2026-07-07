@@ -47,3 +47,34 @@ if (slides.length > 0) {
         showSlide(currentSlide);
     }, 4000);
 }
+// ===== Premium Hero Background Slider =====
+
+const slides = document.querySelectorAll(".hero-slider img");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+    slides.forEach((slide)=>{
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+}
+
+function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+// पहली इमेज
+showSlide(currentSlide);
+
+// हर 4 सेकंड में बदले
+setInterval(nextSlide,4000);
