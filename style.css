@@ -206,24 +206,6 @@ align-items:center;
 
 z-index:99999;
 
-}
-
-.popup-content{
-
-background:white;
-
-padding:30px;
-
-border-radius:15px;
-
-width:90%;
-
-max-width:400px;
-
-text-align:center;
-
-}
-
 .close{
 
 float:right;
