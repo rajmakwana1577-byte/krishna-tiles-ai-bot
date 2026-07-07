@@ -251,3 +251,26 @@ border-radius:8px;
 cursor:pointer;
 
 }
+/* Hero Slider */
+
+.hero-slider{
+    position:relative;
+    width:100%;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.hero-slider .slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+.hero-slider .slide.active{
+    opacity:1;
+}
