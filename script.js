@@ -306,3 +306,98 @@ document.addEventListener("visibilitychange",()=>{
     }
 
 });
+/* =====================================
+   script.js v3.0
+   Part 4
+===================================== */
+
+
+/* ===========================
+   Live Product Search
+=========================== */
+
+const searchBox = document.getElementById("searchBox");
+
+if(searchBox){
+
+    searchBox.addEventListener("keyup",function(){
+
+        const value=this.value.toLowerCase();
+
+        document.querySelectorAll(".product-card").forEach(card=>{
+
+            const text=card.innerText.toLowerCase();
+
+            card.style.display=text.includes(value) ? "block" : "none";
+
+        });
+
+    });
+
+}
+
+
+/* ===========================
+   Dark / Light Mode
+=========================== */
+
+const modeBtn=document.getElementById("themeToggle");
+
+if(modeBtn){
+
+    if(localStorage.getItem("theme")==="dark"){
+
+        document.body.classList.add("dark");
+
+        modeBtn.innerHTML="☀️";
+
+    }
+
+    modeBtn.addEventListener("click",()=>{
+
+        document.body.classList.toggle("dark");
+
+        if(document.body.classList.contains("dark")){
+
+            localStorage.setItem("theme","dark");
+
+            modeBtn.innerHTML="☀️";
+
+        }else{
+
+            localStorage.setItem("theme","light");
+
+            modeBtn.innerHTML="🌙";
+
+        }
+
+    });
+
+}
+
+
+/* ===========================
+   Share Product
+=========================== */
+
+function shareProduct(product){
+
+    const url=window.location.href;
+
+    const message=
+
+`Check out this product:
+
+${product}
+
+${url}`;
+
+    window.open(
+
+`https://wa.me/?text=${encodeURIComponent(message)}`,
+
+"_blank"
+
+    );
+
+}
