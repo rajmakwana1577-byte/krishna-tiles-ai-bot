@@ -1,55 +1,14 @@
-function openPopup(title, text) {
+/* =====================================
+   Krishna Ceramics Store
+   script.js v3.0
+   Part 1
+===================================== */
 
-    document.getElementById("popup").style.display = "flex";
+/* ===========================
+   Hero Auto Slider
+=========================== */
 
-    document.getElementById("popupTitle").innerText = title;
-
-    document.getElementById("popupText").innerText = text;
-
-    document.getElementById("popupBtn").href =
-    "https://wa.me/919510108013?text=Hello Krishna Ceramics Store, I want information about " + encodeURIComponent(title);
-
-}
-
-function closePopup() {
-
-    document.getElementById("popup").style.display = "none";
-
-}
-
-window.onclick = function(event){
-
-    const popup = document.getElementById("popup");
-
-    if(event.target == popup){
-
-        popup.style.display = "none";
-
-    }
-
-}
-// ===== Hero Slider =====
-
-let currentSlide = 0;
 const slides = document.querySelectorAll(".hero-slider .slide");
-
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-}
-
-if (slides.length > 0) {
-    setInterval(() => {
-        currentSlide++;
-        if (currentSlide >= slides.length) {
-            currentSlide = 0;
-        }
-        showSlide(currentSlide);
-    }, 4000);
-}
-// ===== Premium Hero Background Slider =====
-
-const slides = document.querySelectorAll(".hero-slider img");
 
 let currentSlide = 0;
 
@@ -73,8 +32,62 @@ function nextSlide(){
     showSlide(currentSlide);
 }
 
-// पहली इमेज
-showSlide(currentSlide);
+if(slides.length > 0){
 
-// हर 4 सेकंड में बदले
-setInterval(nextSlide,4000);
+    showSlide(currentSlide);
+
+    setInterval(nextSlide,4000);
+
+}
+
+
+/* ===========================
+   Mobile Menu
+=========================== */
+
+const menuToggle = document.querySelector(".menu-toggle");
+
+const menu = document.querySelector(".menu");
+
+if(menuToggle){
+
+    menuToggle.addEventListener("click",()=>{
+
+        menu.classList.toggle("active");
+
+    });
+
+}
+
+
+/* ===========================
+   Smooth Scroll
+=========================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+    anchor.addEventListener("click",function(e){
+
+        e.preventDefault();
+
+        const target=document.querySelector(this.getAttribute("href"));
+
+        if(target){
+
+            target.scrollIntoView({
+
+                behavior:"smooth"
+
+            });
+
+        }
+
+        if(menu){
+
+            menu.classList.remove("active");
+
+        }
+
+    });
+
+});
