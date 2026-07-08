@@ -208,3 +208,101 @@ sections.forEach(section=>{
 window.addEventListener("scroll",revealSection);
 
 revealSection();
+/* =====================================
+   script.js v3.0
+   Part 3
+===================================== */
+
+/* ===========================
+   Animated Counter
+=========================== */
+
+const counters = document.querySelectorAll(".stat-box h2");
+
+let counterStarted = false;
+
+function runCounters() {
+
+    if (counterStarted) return;
+
+    counterStarted = true;
+
+    counters.forEach(counter => {
+
+        const text = counter.innerText;
+
+        if (!text.includes("+")) return;
+
+        const target = parseInt(text.replace(/\D/g, ""));
+
+        let value = 0;
+
+        const speed = Math.max(10, Math.floor(target / 80));
+
+        const timer = setInterval(() => {
+
+            value += speed;
+
+            if (value >= target) {
+
+                value = target;
+
+                clearInterval(timer);
+
+            }
+
+            counter.innerText = value + "+";
+
+        }, 20);
+
+    });
+
+}
+
+window.addEventListener("scroll", () => {
+
+    const stats = document.querySelector(".stats");
+
+    if (!stats) return;
+
+    if (stats.getBoundingClientRect().top < window.innerHeight - 100) {
+
+        runCounters();
+
+    }
+
+});
+
+
+/* ===========================
+   Close Popup with ESC
+=========================== */
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+
+        closePopup();
+
+    }
+
+});
+
+
+/* ===========================
+   Pause Slider on Hidden Tab
+=========================== */
+
+document.addEventListener("visibilitychange",()=>{
+
+    if(document.hidden){
+
+        console.log("Slider Paused");
+
+    }else{
+
+        console.log("Slider Active");
+
+    }
+
+});
